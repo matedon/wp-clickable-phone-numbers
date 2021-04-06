@@ -3,8 +3,8 @@
 Plugin Name: Clickable Phone Numbers
 Plugin URI: https://cjratliff.net
 Description: Scans active page and modifies phone number(s) to allow clickable telephone links.
-Version: 0.1
-Author: CJ Ratliff / A+ Media
+Version: 0.2
+Author: CJ Ratliff
 Author URI: https://cjratliff.net
 */
 
