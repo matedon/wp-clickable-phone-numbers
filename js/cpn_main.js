@@ -6,7 +6,7 @@
       getTextNodes(document.body, false, tNodes, /(\+36 \d{2} \d{3} \d{4})/ig);
       var l = tNodes.length;
       while (l--) {
-        wrapNode(tNodes[l], /(\+36 \d{2} \d{3} \d{4})/ig, "<a href='tel:$1' target="_blank" class="wp-clickable-phone-numbers">$1</a>");
+        wrapNode(tNodes[l], /(\+36 \d{2} \d{3} \d{4})/ig, "<a href='tel:$1' target='_blank' class='wp-clickable-phone-numbers'>$1</a>");
       }
     }
 
