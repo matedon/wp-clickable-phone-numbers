@@ -2,10 +2,11 @@
   $(document).ready(function () {
     var makePhoneLinks = function () {
       var tNodes = [];
-      getTextNodes(document.body, false, tNodes, /(((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4})/ig);
+      // +36 30 123 4567
+      getTextNodes(document.body, false, tNodes, /(\+36 \d{2} \d{3} \d{4})/ig);
       var l = tNodes.length;
       while (l--) {
-        wrapNode(tNodes[l], /(((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4})/ig, "<a target='tel:$1'>$1</a>");
+        wrapNode(tNodes[l], /(\+36 \d{2} \d{3} \d{4})/ig, "<a target='tel:$1'>$1</a>");
       }
     }
 
